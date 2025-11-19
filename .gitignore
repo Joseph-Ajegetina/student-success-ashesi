@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (keep sample, exclude real student data)
+data/early_warning_features.csv
+# Keep the sample version for deployment:
+# !data/early_warning_features_sample.csv
+
+# Logs
+*.log
+
+# Models (optional - include if small enough)
+models/*.pkl
+
+# Environment
+.env
+venv/
+env/
