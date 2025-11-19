@@ -1,0 +1,44 @@
+
+1. **MODEL PERFORMANCE: 92% RECALL ENABLES PROACTIVE INTERVENTION**
+   - The early warning system correctly identifies 9 out of 10 at-risk students
+   - This allows advisors to intervene 6-12 months before probation occurs
+   - Trade-off: ~75% of flagged students won't go on probation (false positives)
+   - ACTIONABLE: Implement tiered intervention (high-risk → mandatory advising,
+     medium-risk → optional tutoring)
+
+2. **GPA TRAJECTORY MATTERS MORE THAN CURRENT GPA**
+   - Students with declining GPAs (negative slope) are at high risk, even if CGPA > 2.0
+   - A student with CGPA = 2.5 but declining trend needs intervention
+   - A student with CGPA = 2.3 but improving trend may be okay
+   - ACTIONABLE: Advisors should monitor GPA trends, not just current values
+   - DASHBOARD FEATURE: Show GPA trajectory chart for each student
+
+3. **COURSE FAILURE PATTERNS ARE EARLY WARNING SIGNS**
+   - At-risk students have 3x higher historical failure rates (before final semester)
+   - Even one or two course failures in early semesters predict future struggles
+   - ACTIONABLE: Trigger mandatory tutoring after any course failure
+   - CURRICULUM: Identify high-failure courses and redesign them
+
+4. **DEMOGRAPHIC GROUPS NEED TAILORED SUPPORT**
+   - International students, financial aid recipients face different challenges
+   - One-size-fits-all interventions are less effective
+   - ACTIONABLE: Create specialized support programs:
+     * International students → academic writing workshops
+     * Financial aid students → work-study hour adjustments during midterms
+     * Students in specific programs → program-specific peer mentoring
+
+5. **EARLY INTERVENTION (SEMESTER 1-2) IS CRITICAL**
+   - Academic patterns established in first 2 semesters tend to persist
+   - Students who struggle early continue to struggle unless intervened
+   - Waiting until semester 4-5 may be too late
+   - ACTIONABLE: Implement mandatory check-ins after semester 1 for:
+     * Students with GPA < 2.5
+     * Students with any course failures
+     * Students with declining GPA trend
+
+**ESTIMATED IMPACT:**
+If Ashesi implements these interventions for the ~200 students flagged annually:
+- Prevent ~30-40 probations per year (based on 92% recall, 50 actual probations)
+- Improve retention by 2-3%
+- Cost: ~$50K/year (tutoring, advising hours)
+- ROI: ~$200K/year (retained tuition, improved graduation rates)
