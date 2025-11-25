@@ -23,41 +23,68 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for better styling
+# Custom CSS for better styling - Color-blind friendly palette
 st.markdown("""
 <style>
     .main-header {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #1f77b4;
+        color: #0066cc;
         text-align: center;
         padding: 1rem 0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
     }
     .metric-card {
-        background-color: #f0f2f6;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-left: 4px solid #1f77b4;
+        background-color: #f8f9fa;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        border-left: 5px solid #0066cc;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
     }
     .insight-box {
-        background-color: #e8f4f8;
-        padding: 1rem;
-        border-radius: 0.5rem;
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        padding: 1.25rem;
+        border-radius: 0.75rem;
         margin: 1rem 0;
+        border-left: 5px solid #0066cc;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
     }
     .warning-box {
-        background-color: #fff3cd;
-        padding: 1rem;
-        border-radius: 0.5rem;
+        background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+        padding: 1.25rem;
+        border-radius: 0.75rem;
         margin: 1rem 0;
-        border-left: 4px solid #ffc107;
+        border-left: 5px solid #ff9800;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
     }
     .success-box {
-        background-color: #d4edda;
-        padding: 1rem;
-        border-radius: 0.5rem;
+        background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+        padding: 1.25rem;
+        border-radius: 0.75rem;
         margin: 1rem 0;
-        border-left: 4px solid #28a745;
+        border-left: 5px solid #4caf50;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    /* Button styling */
+    .stButton>button {
+        background-color: #0066cc;
+        color: white;
+        border-radius: 0.5rem;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #0052a3;
+        box-shadow: 0 4px 8px rgba(0,102,204,0.3);
     }
 </style>
 """, unsafe_allow_html=True)
